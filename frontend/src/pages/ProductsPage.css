@@ -1,21 +1,89 @@
+/* PageLayout.css */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  background-color: #f2f3f7;
+  padding: 20px;
+  overflow-y: auto; /* Добавим прокрутку по вертикали, если контент не влезает */
+}
+
 /* ProductsPage.css */
-.products-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .product-item {
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-  }
-  
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки для формы */
+  grid-gap: 20px;
+  background-color: #f2f3f7;
+}
+
+.products-container .form-item {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end; /* Выравнивание кнопок справа */
+  margin-top: 20px;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 10px; /* Отступы между кнопками */
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки для элементов */
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.items-container .item {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Высота элементов */
+}
+
+.table-container {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f3f7;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+/* Убедитесь, что у body и html нет отступов и полей */
+body, html {
+  margin: 0;
+  padding: 0;
+}
