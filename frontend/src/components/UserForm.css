@@ -1,0 +1,14 @@
+/* UserForm.css */
+.user-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-form input {
+    margin-bottom: 10px;
+  }
+  
+  .user-form button {
+    margin-top: 10px;
+  }
+  

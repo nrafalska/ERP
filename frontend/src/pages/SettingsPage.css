@@ -1,0 +1,18 @@
+/* SettingsPage.css */
+.settings-page {
+    padding: 20px;
+  }
+  
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .settings-form input {
+    margin-bottom: 10px;
+  }
+  
+  .settings-form button {
+    margin-top: 10px;
+  }
+  

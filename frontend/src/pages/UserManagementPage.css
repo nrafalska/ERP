@@ -1,0 +1,24 @@
+/* UserManagementPage.css */
+.user-management-page {
+    padding: 20px;
+  }
+  
+  .user-management-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .user-management-page table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-management-page th, .user-management-page td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .user-management-page th {
+    background-color: #f2f2f2;
+  }
+  

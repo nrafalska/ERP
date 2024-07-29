@@ -1,0 +1,20 @@
+/* ProductDetailsPage.css */
+.product-details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-details-page img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-details-page h2 {
+    margin: 20px 0;
+  }
+  
+  .product-details-page p {
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,20 @@
+.ebay-posts-page {
+  padding: 20px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.post-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.post-item img {
+  max-width: 100%;
+  height: auto;
+}
