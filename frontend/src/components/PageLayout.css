@@ -1,27 +1,25 @@
-/* PageLayout.css */
 .app {
     display: flex;
     height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #10141f;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .content {
     flex: 1;
     background-color: #f2f3f7;
     padding: 20px;
-  }
-  
-  /* HomePage.css */
-  .home-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-  }
-  
-  .home-container .grid-item {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-left: 200px; /* Это добавляет отступ слева для контента, чтобы он не был под сайдбаром */
   }
   
   /* Убедитесь, что у body и html нет отступов и полей */
