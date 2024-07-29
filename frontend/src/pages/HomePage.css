@@ -1,51 +1,100 @@
-/* LoginPage.css */
-.login-page {
+.dashboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f0f2f5;
+  padding: 20px;
 }
 
-.login-page h1 {
-  font-family: 'Arial', sans-serif;
-  font-size: 3rem;
-  color: #0066ff;
+.header {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.login-page img {
-  width: 100px;
+.header-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.header-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.header-item p {
+  font-size: 2em;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+}
+
+.main-chart, .side-info, .category-info, .last-24-hours {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.main-chart {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.chart {
+  height: 300px;
+  background-color: #e0e0e0;
+}
+
+.side-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.employees, .quick-action {
   margin-bottom: 20px;
 }
 
-.login-page form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.employees ul {
+  list-style: none;
+  padding: 0;
 }
 
-.login-page input {
-  width: 300px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+.employees li {
+  margin: 10px 0;
 }
 
-.login-page button {
-  width: 300px;
+.quick-action .status {
+  color: blue;
+}
+
+.quick-action button {
+  display: block;
+  margin: 10px 0;
   padding: 10px;
-  background-color: #0066ff;
+  background-color: #000;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
+  border-radius: 4px;
 }
 
-.login-page button:hover {
-  background-color: #0056cc;
+.category-info, .last-24-hours {
+  margin-top: 20px;
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
 }

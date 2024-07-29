@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import './eBayPostsPage.css';
 import api from '../api/api';
 
@@ -9,13 +9,13 @@ interface Post {
   description: string;
 }
 
-const EbayPostsPage: React.FC = () => { // Изменено: имя функции начинается с заглавной буквы
+const EbayPostsPage: React.FC = () => {
   const [posts, setPosts] = React.useState<Post[]>([]);
 
   React.useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await api.get('/ebay-posts');
+        const response = await api.get<Post[]>('/ebay-posts');
         setPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
@@ -38,4 +38,4 @@ const EbayPostsPage: React.FC = () => { // Изменено: имя функци
   );
 };
 
-export default EbayPostsPage; // Изменено: имя компонента соответствует имени функции
+export default EbayPostsPage;

@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stats {
+  flex: 1;
+  padding: 10px;
+}
+
+.charts {
+  flex: 2;
+  padding: 10px;
+}
+
+.charts h2 {
+  font-size: 1.5em;
+}
