@@ -1,0 +1,32 @@
+/* PageLayout.css */
+.app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    background-color: #f2f3f7;
+    padding: 20px;
+  }
+  
+  /* HomePage.css */
+  .home-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
+  .home-container .grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Убедитесь, что у body и html нет отступов и полей */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  

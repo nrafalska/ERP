@@ -1,0 +1,116 @@
+.sidebar {
+    width: 200px;
+    background-color: #10141f;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Сократить отступ снизу */
+    justify-content: center; /* Центрирование названия */
+  }
+  
+  .sidebar-title {
+    font-size: 1em; /* Уменьшить размер шрифта */
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 10px; /* Сократить отступ снизу */
+  }
+  
+  .sidebar-section-title {
+    font-size: 0.9em; /* Уменьшить размер шрифта */
+    margin-bottom: 8px; /* Сократить отступ снизу */
+    color: #b0b0b0;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav ul li {
+    margin: 6px 0; /* Сократить отступы между элементами */
+  }
+  
+  .sidebar-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px; /* Сократить отступы внутри элементов */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85em; /* Уменьшить размер шрифта */
+  }
+  
+  .sidebar-nav ul li a:hover,
+  .sidebar-nav ul li a.active {
+    background-color: #0f3460;
+  }
+  
+  .sidebar-quick-actions {
+    margin-top: auto;
+  }
+  
+  .sidebar-quick-actions h3 {
+    font-size: 0.9em; /* Уменьшить размер шрифта */
+    margin-bottom: 0.5em;
+  }
+  
+  .sidebar-quick-actions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-quick-actions ul li {
+    margin: 6px 0; /* Сократить отступы между элементами */
+  }
+  
+  .sidebar-quick-actions ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px; /* Сократить отступы внутри элементов */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85em; /* Уменьшить размер шрифта */
+  }
+  
+  .sidebar-quick-actions ul li a:hover,
+  .sidebar-quick-actions ul li a.active {
+    background-color: #0f3460;
+  }
+  
+  /* Адаптивные стили */
+  @media (max-height: 800px) {
+    .sidebar {
+      padding: 8px;
+    }
+    .sidebar-title {
+      font-size: 0.9em; /* Еще меньше размер шрифта */
+    }
+    .sidebar-section-title {
+      font-size: 0.8em; /* Еще меньше размер шрифта */
+    }
+    .sidebar-nav ul li a {
+      font-size: 0.75em; /* Еще меньше размер шрифта */
+      padding: 4px; /* Еще меньше отступы */
+    }
+    .sidebar-quick-actions h3 {
+      font-size: 0.8em; /* Еще меньше размер шрифта */
+    }
+    .sidebar-quick-actions ul li a {
+      font-size: 0.75em; /* Еще меньше размер шрифта */
+      padding: 4px; /* Еще меньше отступы */
+    }
+  }
+  

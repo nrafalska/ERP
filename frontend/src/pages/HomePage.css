@@ -1,100 +1,44 @@
-.dashboard {
-  display: flex;
-  flex-direction: column;
+.home-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   padding: 20px;
+  background-color: #f2f3f7;
 }
 
-.header {
+.home-page__stats {
+  grid-column: span 3;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.header-item {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
+.home-page__stat {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
-  flex: 1;
-  margin: 0 10px;
 }
 
-.header-item h3 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-.header-item p {
-  font-size: 2em;
-  margin: 0;
-}
-
-.content {
-  display: flex;
-}
-
-.main-chart, .side-info, .category-info, .last-24-hours {
-  background-color: #fff;
+.home-page__chart,
+.home-page__employees,
+.home-page__categories,
+.home-page__recent,
+.home-page__actions {
+  background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.main-chart {
-  flex: 2;
-  margin-right: 20px;
+.home-page__chart {
+  grid-column: span 2;
 }
 
-.chart {
-  height: 300px;
-  background-color: #e0e0e0;
-}
-
-.side-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.employees, .quick-action {
-  margin-bottom: 20px;
-}
-
-.employees ul {
-  list-style: none;
-  padding: 0;
-}
-
-.employees li {
-  margin: 10px 0;
-}
-
-.quick-action .status {
-  color: blue;
-}
-
-.quick-action button {
-  display: block;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
-
-.category-info, .last-24-hours {
-  margin-top: 20px;
-  flex: 1;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td {
-  padding: 10px;
-  border: 1px solid #ddd;
+.home-page__employees,
+.home-page__actions {
+  grid-column: span 1;
 }
